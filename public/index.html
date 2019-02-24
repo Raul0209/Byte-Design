@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Byte Solutions</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="./CSS/index.css">
+    <link rel="shortcut icon" href="./Resources/Images/faviconbyte.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet">
+    <script src="app.js"></script>
+</head>
+
+<body>
+    <nav>
+        <div class="nav-wrapper">
+            <div class="container1">
+
+                <a href="#" class="brand-logo center">
+                    <img src="./Resources/Images/byte.png" width="55" height="60" alt="Logo Empresarial">
+                </a>
+                <a href="#" class="sidenav-trigger" data-target="mobile-links">
+                    <i class="material-icons">menu</i>
+                </a>
+
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a href="sass.html">Sass</a></li>
+                    <li><a href="badges.html">Components</a></li>
+                    <li><a href="collapsible.html">JavaScript</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+    <ul class="sidenav" id="mobile-links">
+        <form>
+            <div class="input-field">
+                <input placeholder="Introduce tu busqueda" id="search" type="search" required>
+                <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+            </div>
+        </form>
+        <li><a href="sass.html">Sass</a></li>
+        <li><a href="badges.html">Components</a></li>
+        <li><a href="collapsible.html">JavaScript</a></li>
+    </ul>
+
+
+
+
+
+    <div class="mainContainer">
+        <div class="titleHead">
+            <p class="flow-text">
+                Almacenadoras
+            </p>
+        </div>
+
+        <div class="col s12 m6">
+            <div class="addButton">
+                <a class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">add</i></a>
+            </div>
+        </div>
+
+        <div>
+            <table class="highlight centered">
+                <thead>
+                    <tr id="headTable">
+                        <th>Codigo</th>
+                        <th>Descripcion</th>
+                        <th>Editar</th>
+                        <th>Eliminar</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Alvin</td>
+                        <td>Eclair</td>
+                        <td><a class="btn-floating btn-large cyan pulse"><i class="material-icons">edit</i></a></td>
+                        <td><a class="btn-floating btn-large cyan pulse"><i class="material-icons">delete</i></a></td>
+                    </tr>
+                    <tr>
+                        <td>Alan</td>
+                        <td>Jellybean</td>
+                        <td><a href="#idModal" class="btn-floating btn-large cyan pulse"><i class="material-icons">edit</i></a></td>
+                        <td><a class="btn-floating btn-large cyan pulse"><i class="material-icons">delete</i></a></td>
+                    </tr>
+                    <tr>
+                        <td>Jonathan</td>
+                        <td>Lollipop</td>
+                        <td><a class="btn-floating btn-large cyan pulse"><i class="material-icons">edit</i></a></td>
+                        <td><a class="btn-floating btn-large cyan pulse"><i class="material-icons">delete</i></a></td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+
+    </div>
+
+
+    <div class="modal" id="idModal">
+        <div class="modal-content">
+            <h4>Esta funcionando?</h4>
+            <a>lorem
+            </a>
+        </div>
+    </div>
+
+</body>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.sidenav');
+        var instances = M.Sidenav.init(elems);
+    });
+
+    document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.modal');
+        var instances = M.Modal.init(elems);
+    });
+
+</script>
+
+</html>
